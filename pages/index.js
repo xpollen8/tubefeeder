@@ -11,6 +11,7 @@ export async function getServerSideProps(context) {
 
 	const since = 0;
 	const channels = [
+		{ id: 'UCC76FBg2d-5NWFD8aK4ql5A', nickname: 'carlrogers', tags: [ 'home', 'restoration' ] },
 		{ id: 'UCHnyfMqiRRG1u-2MsSQLbXA', nickname: 'Verttasium', tags: [ 'education' ] },
 		{ id: 'UClN4WzXIXAbmxjnfZ7EOoeg', nickname: 'Not Terrible Restorations', tags: [ 'restoration', 'tools' ] },
 		{ id: 'UCBa659QWEk1AI4Tg--mrJ2A', nickname: 'Tom Scott', tags: [ 'travel', 'history' ] },
