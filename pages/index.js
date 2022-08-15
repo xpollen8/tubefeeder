@@ -9,7 +9,7 @@ const parser = new Parser();
 
 export async function getServerSideProps(context) {
 
-	const since = 0;
+	const since = 1653018250000;
 	const channels = [
 		{ id: 'UCC76FBg2d-5NWFD8aK4ql5A', nickname: 'carlrogers', tags: [ 'home', 'restoration' ] },
 		{ id: 'UCHnyfMqiRRG1u-2MsSQLbXA', nickname: 'Verttasium', tags: [ 'education' ] },
@@ -31,7 +31,7 @@ export async function getServerSideProps(context) {
 		{ id: 'UCVveEFTOd6khhSXXnRhxJmg', nickname: 'Fireball Tool', tags: [ 'fun', 'maker' ] },
 		{ id: 'UCW39zufHfsuGgpLviKh297Q', nickname: 'DW Documentary', tags: [ 'history', 'documentary' ] },
 		{ id: 'UCgN4rDA3UNQ1OKQRXJd0nwg', nickname: 'SamSelikoff', tags: [ 'tutorials', 'UX' ] },
-		{ id: 'UCwRH985XgMYXQ6NxXDo8npw', nickname: 'Kurzgesagt – In a Nutshell', tags: [ 'education' ] },
+		{ id: 'UCsXVk37bltHxD1rDPwtNM8Q', nickname: 'Kurzgesagt – In a Nutshell', tags: [ 'education' ] },
 		{ id: 'UCfsznjef2zGJnrCRQBXqo6Q', nickname: 'Machine Thinking', tags: [ 'education', 'maker', 'machines' ] },
 		{ id: 'UCg-_lYeV8hBnDSay7nmphUA', nickname: 'Tally Ho', tags: [ 'maker', 'restoration', 'boat' ] },
 		{ id: 'UCl9I7RgD0i7JZ58CK17kKHQ', nickname: 'Soup Motoring', tags: [ 'maker', 'restoration', 'car' ] },
