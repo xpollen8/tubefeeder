@@ -9,7 +9,7 @@ const parser = new Parser();
 
 export async function getServerSideProps(context) {
 
-	const since = 1653018250000;
+	const since = 0;
 	const channels = [
 		{ id: 'UCC76FBg2d-5NWFD8aK4ql5A', nickname: 'carlrogers', tags: [ 'home', 'restoration' ] },
 		{ id: 'UCHnyfMqiRRG1u-2MsSQLbXA', nickname: 'Verttasium', tags: [ 'education' ] },
