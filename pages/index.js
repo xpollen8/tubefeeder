@@ -47,7 +47,6 @@ export async function getServerSideProps(context) {
 		{ id: 'UCCKDHzGUWhVXxdx0sZG7DCw', nickname: 'joshua w finn', tags: [ 'model airplanes' ] },
 		{ id: 'UCz2iUx-Imr6HgDC3zAFpjOw', nickname: 'David Bennet Piano', tags: [ 'education', 'music' ] },
 		{ id: 'UCnkp4xDOwqqJD7sSM3xdUiQ', nickname: 'Adam Neely', tags: [ 'education', 'music' ] },
-		{ id: 'UCfsznjef2zGJnrCRQBXqo6Q', nickname: 'Machine Thinking', tags: [ 'education', 'maker', 'tools' ] },
 		{ id: 'UCafxR2HWJRmMfSdyZXvZMTw', nickname: 'LOOK MUM NO COMPUTER', tags: [ 'maker', 'electronics', 'music' ] },
 		{ id: 'UCC9EjyMN_hx5NdctLBx5X7w', nickname: 'Scammer Payback', tags: [ 'whitehat' ] },
 		{ id: 'UCW5OrUZ4SeUYkUg1XqcjFYA', nickname: 'GeoWizard', tags: [ 'travel', 'fun' ] },
