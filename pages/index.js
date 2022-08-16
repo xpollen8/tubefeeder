@@ -3,21 +3,22 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import ta from 'time-ago';
 
+const refreshData = async (setVideos, setChannels) => {
+	await fetch(`/api/fetch`)
+		.then(res => res.json())
+		.then(({ channels = [], items = [] }) => {
+			setVideos(items);
+			setChannels(channels);
+		});
+}
+
 export default function Home() {
 	const [ videos, setVideos ] = useState([]);
 	const [ channels, setChannels ] = useState([]);
 
 	useEffect(() => {
-		const get = async () => {
-			await fetch(`/api/fetch`)
-				.then(res => res.json())
-				.then(({ channels = [], items = [] }) => {
-					setVideos(items);
-					setChannels(channels);
-				});
-		}
 		if (!videos?.length) {
-			get();
+			refreshData(setVideos, setChannels);
 		}
 	}, []);
 
@@ -29,8 +30,16 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+					{!videos?.length ?
+						<h1>Loading..</h1> :
+						<div>
+						<button onClick={(ev) => {
+							ev.preventDefault();
+							setVideos([]);
+							refreshData(setVideos, setChannels);
+						}}>Refresh</button>
+						</div>}
 				<div className={styles.grid}>
-					{!videos?.length && <h1>Loading..</h1>}
 					{videos.map(it => {
 						return <div key={it?.videoLink} className={styles.card}>
 								<div>
