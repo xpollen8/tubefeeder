@@ -11,6 +11,7 @@ export async function getServerSideProps(context) {
 
 	const since = 0;
 	const channels = [
+		{ id: 'UCtwKon9qMt5YLVgQt1tvJKg', nickname: 'Objectivity', tags: [ 'travel', 'history' ] },
 		{ id: 'UC6I0KzAD7uFTL1qzxyunkvA', nickname: 'Blacktail Studio', tags: [ 'woodworking', 'tables' ] },
 		{ id: 'UC4sEmXUuWIFlxRIFBRV6VXQ', nickname: 'The History Guy', tags: [ 'history' ] },
 		{ id: 'UCcUf33cEPky2GiWBgOP-jQA', nickname: 'Coffeehouse Crime', tags: [ 'true crime' ] },
@@ -61,8 +62,8 @@ export async function getServerSideProps(context) {
 		{ id: 'UC8VkNBOwvsTlFjoSnNSMmxw', nickname: 'Smarter Everyday', tags: [ 'maker', 'technology' ] },
 		{ id: 'UCuVLG9pThvBABcYCm7pkNkA', nickname: 'Climate Town', tags: [ 'criticism' ] },
 		{ id: 'UCflg8pIElTb9qdFVaDC7gMQ', nickname: 'Dennis Davis Edu', tags: [ 'math' ] },
-		{ id: 'UCtwKon9qMt5YLVgQt1tvJKg', nickname: 'Numberphile', tags: [ 'math' ] },
-		{ id: 'UCoxcjq-8xIDTYp3uz647V5A', nickname: 'Computerphile', tags: [ 'computers' ] },
+		{ id: 'UCoxcjq-8xIDTYp3uz647V5A', nickname: 'Numberphile', tags: [ 'math' ] },
+		{ id: 'UC9-y-6csu5WGm29I7JiwpnA', nickname: 'Computerphile', tags: [ 'computers' ] },
 		{ id: 'UCDRmGMSgrtZkOsh_NQl4_xw', nickname: 'Secret Base', tags: [ 'sports' ] },
 		{ id: 'UC1V-DYqsaj764uBis9-UDug', nickname: 'Foureyes Furniture', tags: [ 'furniture', 'maker' ] },
 	];
