@@ -43,13 +43,13 @@ export default function Home() {
 					{videos.map(it => {
 						return <div key={it?.videoLink} className={styles.card}>
 								<div>
+									<b>{it?.channel}</b>
+								</div>
+								<div>
 									{ta.ago(it?.created)}
 								</div>
 								<div>
 									<a href={it?.videoLink} target="new"><img src={it?.thumbnail} alt="thumb" width={240} height={180} /></a>
-								</div>
-								<div>
-									<b>{it?.channel}</b>
 								</div>
 								<div>
 									{it?.title}
