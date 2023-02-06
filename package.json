@@ -17,7 +17,7 @@
     "time-ago": "^0.2.1"
   },
   "devDependencies": {
-    "eslint-config-next": "13.1.2",
+    "eslint-config-next": "13.1.6",
     "eslint": "8.32.0"
   }
 }
