@@ -1,6 +1,6 @@
 ## Getting Started
 
-First, change the contents of the `channels` array in `pages/index.js`
+First, change the contents of the `channels` array in `lib/feed.js`
 
 Second, install dependencies: ```npm i```
 
