@@ -14,13 +14,11 @@
   "dependencies": {
     "async-batch": "^1.1.2",
     "next": "13.1.0",
-    "react": "18.2.0",
+    "react": "18.3.1",
     "react-dom": "18.2.0",
     "rss-parser": "^3.13.0",
     "time-ago": "^0.2.1"
   },
   "devDependencies": {
-    "eslint-config-next": "14.1.0",
-    "eslint": "8.56.0"
   }
 }
