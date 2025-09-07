@@ -12,6 +12,8 @@ const refreshData = async (setVideos, setChannels) => {
 		});
 }
 
+const imageHeight = 200;
+
 export default function Home() {
 	const [ videos, setVideos ] = useState([]);
 	const [ channels, setChannels ] = useState([]);
@@ -39,6 +41,7 @@ export default function Home() {
 							refreshData(setVideos, setChannels);
 						}}>Refresh</button>
 						</div>}
+						<p />
 				<div className={styles.grid}>
 					{videos.map(it => {
 						return <div key={it?.videoLink} className={styles.card}>
@@ -49,7 +52,7 @@ export default function Home() {
 									{ta.ago(it?.created)}
 								</div>
 								<div>
-									<a href={it?.videoLink} target="new"><img src={it?.thumbnail} alt="thumb" width={240} height={180} /></a>
+									<a href={it?.videoLink} target="new"><img src={it?.thumbnail} alt="thumb" width={imageHeight} height={imageHeight * .75} /></a>
 								</div>
 								<div>
 									{it?.title}
@@ -60,7 +63,7 @@ export default function Home() {
 						</div>
 					})}
 				</div>
-				<div className={styles.grid}>
+				<div>
 					<ol>{channels.map(({ id, nickname }) =>  {
 						return <li key={id}>
 							<a href={`https://youtube.com/channel/${id}/videos`} target="new">{nickname}</a>
