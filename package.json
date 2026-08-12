@@ -2,9 +2,9 @@
   "name": "tubefeeder",
   "version": "0.1.0",
   "private": true,
-	  "engines": {
-		    "node": ">=v20.x.x"
-				  },
+	"engines": {
+		"node": ">=v24.x.x"
+	},
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "async-batch": "^1.1.2",
-    "next": "16.2.12",
+		"next": "^16.3.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "rss-parser": "^3.13.0",
